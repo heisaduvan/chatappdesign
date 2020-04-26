@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="alert alert-info" role="alert">
+      <h4 class="alert-heading">Welcome! This is a chat application!</h4>
+      <p>
+        This application created by ASP.NET Core and Angular 9. It using SignalR
+        to communication. You want to see
+        <a href="https://github.com/isaduvan/HelloAzure" target="_blank"
+          >code.</a
+        >
+      </p>
+      <hr />
+      <p class="mb-0">
+        You can type a message to chat room. You can type " Is there anyone
+        there?"
+      </p>
+    </div>
+    <div class="container">
+      <!-- BEGIN : chatHeader -->
+      <div class="chatHeader">
+        <!-- <a href="#" class="BackBtn"
+          ><i class="fa fa-angle-left" aria-hidden="true"></i 
+        ></a> -->
+        <div class="headerTitle">
+          <!-- <div class="NameIcon">SA</div> -->
+          <div class="Txt">
+            <div>You have to join us!</div>
+            <div>How are you feeling today ?</div>
+          </div>
+        </div>
+      </div>
+      <!-- END : chatHeader -->
+
+      <!-- BEGIN : chatContent -->
+      <div class="chatContent">
+        <div class="chat-column customer">
+          <div class="item">
+            <div class="chat-icon">SA</div>
+          </div>
+          <div class="item">
+            <div class="chat-message">
+              Merhaba kolay gelsin. Siparişimde değişiklik yapabilir miyim ?
+            </div>
+            <div class="message-date">27.12.2018 10:15</div>
+          </div>
+        </div>
+        <div class="chat-column company">
+          <div class="item">
+            <div class="chat-icon">SB</div>
+          </div>
+          <div class="item">
+            <div class="chat-message">
+              Siparişlerde değişiklik yapamıyoruz. Yanlış ürün sipariş
+              ettiyseniz veya fikrinizi değiştirdiyseniz ürünler kargoya
+              verilmediği sürece siparişi iptal edebilirsiniz.
+            </div>
+            <div class="message-date">27.12.2018 10:15</div>
+          </div>
+        </div>
+        <div class="chat-column customer">
+          <div class="item">
+            <div class="chat-icon">SA</div>
+          </div>
+          <div class="item">
+            <div class="chat-message">
+              Merhaba kolay gelsin. Siparişimde değişiklik yapabilir miyim ?
+            </div>
+            <div class="message-date">27.12.2018 10:15</div>
+          </div>
+        </div>
+        <div class="chat-column company">
+          <div class="item">
+            <div class="chat-icon">SB</div>
+          </div>
+          <div class="item">
+            <div class="chat-message">
+              Siparişlerde değişiklik yapamıyoruz. Yanlış ürün sipariş
+              ettiyseniz veya fikrinizi değiştirdiyseniz ürünler kargoya
+              verilmediği sürece siparişi iptal edebilirsiniz. Siparişlerde
+              değişiklik yapamıyoruz. Yanlış ürün sipariş ettiyseniz veya
+              fikrinizi değiştirdiyseniz ürünler kargoya verilmediği sürece
+              siparişi iptal edebilirsiniz. Siparişlerde değişiklik yapamıyoruz.
+              Yanlış ürün sipariş ettiyseniz veya fikrinizi değiştirdiyseniz
+              ürünler kargoya verilmediği sürece siparişi iptal edebilirsiniz.
+              Siparişlerde değişiklik yapamıyoruz. Yanlış ürün sipariş
+              ettiyseniz veya fikrinizi değiştirdiyseniz ürünler kargoya
+              verilmediği sürece siparişi iptal edebilirsiniz.
+            </div>
+            <div class="message-date">27.12.2018 10:15</div>
+          </div>
+        </div>
+      </div>
+      <!-- END : chatContent -->
+
+      <!-- BEGIN : chatSend -->
+      <div class="chatSend">
+        <input type="text" class="sendText" placeholder="Bir Mesaj Gönder..." />
+        <div id="send-message">
+          <i class="fas fa-paper-plane" aria-hidden="true"></i>
+        </div>
+      </div>
+      <!-- END : chatSend -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/brands.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/solid.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
